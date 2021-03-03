@@ -12,4 +12,23 @@ public class HomeController {
         model.addAttribute("bodyContent","home");
         return "masterTemplate";
     }
+
+    @GetMapping("/game1")
+    public String showGame1(Model model) {
+        model.addAttribute("bodyContent","game1");
+        return "masterTemplate";
+    }
+
+    @GetMapping("/game2")
+    public String showGame2(Model model) {
+        model.addAttribute("bodyContent","game2");
+        return "masterTemplate";
+    }
+
+    @GetMapping("/game3")
+    public String showGame3(Model model) {
+        model.addAttribute("bodyContent","game3");
+        return "masterTemplate";
+    }
 }
+
